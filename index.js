@@ -25,4 +25,5 @@ const cookie2 = (req,res,next) =>{
 };
 app2.use(cookie2)
 app2.use(express.static('statics'))
-app2.listen(80,() => console.log('Listening on port 80...https://050a086837ab.ngrok.io'))
+//ngrokは立ち上げる度にURLが変わるので都度変更すること
+app2.listen(80,() => console.log('Listening on port 80...https://050a086837ab.ngrok.io/test1'))
